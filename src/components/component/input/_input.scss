@@ -1,0 +1,28 @@
+input {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 12px;
+    gap: 12px;
+}
+.pos {
+    display: flex;
+    gap: 5px;
+    
+    &.vertical {
+        flex-direction: column;
+    }
+
+    &.horizontal {
+        flex-direction: row;
+    }
+}
+p {
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+}
