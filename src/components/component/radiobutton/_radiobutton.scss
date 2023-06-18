@@ -1,0 +1,10 @@
+input[type="radio"] {
+  border: 1.5px solid rgba(0, 0, 0, 0.24);
+  border-radius: 100px;
+}
+
+.radiobutton {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

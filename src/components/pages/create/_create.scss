@@ -1,0 +1,25 @@
+.step-1, .step-2, .step-3 {
+  width: 100%;
+  overflow: auto;
+  max-height: 50vh;
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+  }
+}
+
+.step-3 {
+  overflow: visible;
+
+  > div {
+    width: 100%;
+  }
+}
+
+.navigationButtons {
+  display: flex;
+  justify-content: space-between;
+}

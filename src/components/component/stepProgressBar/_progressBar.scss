@@ -1,0 +1,56 @@
+.progressStep {
+  height: 50px;
+
+  .step--icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.indexedStep {
+  color: white;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  background-color: #a6a6a6;
+  border-radius: 50%;
+
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  p {
+    padding-top: 25px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    color: #666666;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  i {
+    font-size: 20px;
+  }
+
+  & .completed {
+
+  }
+}
+
+.indexedStep.accomplished {
+  background-color: #5558fa;
+
+  p {
+    color: #5558fa;
+  }
+}
+
+.RSPBprogressBar {
+  background: #ebebeb;
+}

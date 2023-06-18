@@ -1,0 +1,50 @@
+@import '../../../_colors.scss';
+
+textarea {
+  background: $--white;
+  border: 1px solid $--gray;
+  border-radius: 4px;
+  padding: 12px;
+  max-height: 100px;
+  min-height: 15px;
+  width: calc(100% - 24px) !important;
+
+  font-size: 14px;
+
+  &::placeholder {
+    color: $--text-light;
+  }
+
+  &:hover:not(:disabled) {
+    border: 1px solid $--accent-light;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:disabled {
+    background: $--disabled;
+    color: $--text-disabled;
+  }
+}
+
+.textarea {
+  position: relative;
+  width: 100%;
+
+  & > div {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    border-radius: 4px;
+    padding: 0 5px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+
+    p {
+      color: $--text-light;
+      font-size: 11px;
+    }
+  }
+}
