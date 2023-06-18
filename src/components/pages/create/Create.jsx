@@ -100,8 +100,10 @@ const Create = () => {
     const [visibleModal, setVisibleModal] = useState({visible: false, status: "error"});
 
     const handleBack = (e) => {
-        e.preventDefault();
-        if (step > 1) setStep(step - 1);
+        if (step > 1) {
+            e.preventDefault();
+            setStep(step - 1);
+        }
     };
 
     const SubmitButton = ({isSubmitting}) => (
