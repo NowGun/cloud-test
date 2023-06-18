@@ -152,7 +152,7 @@ const Create = () => {
                         <StepProgressBar step={step}/>
 
                         <div className={"step-" + step}>
-                            <div>
+                            <div className="step-container">
                                 {renderStep(step, values)}
                             </div>
                         </div>

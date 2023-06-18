@@ -4,6 +4,7 @@
   &--info {
     display: flex;
     gap: 30px;
+    align-items: center;
 
     & > div:last-child {
 
@@ -27,24 +28,12 @@
   }
 }
 
-.container {
-  width: 1000px;
+.container, form {
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 30px;
-  form {
-    width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-
-}
-
-body {
-  margin: 50px 0;
 }
 
 .inputs {
@@ -58,4 +47,24 @@ body {
   color: $--text-light;
   font-weight: 400;
   font-size: 12px;
+}
+
+@media(max-width: 1200px) {
+  .inputs {
+    width: 70%;
+  }
+
+  .user--link {
+    flex-wrap: wrap;
+  }
+}
+
+@media(max-width: 500px) {
+  .inputs {
+    width: 100%;
+  }
+
+  .user--link {
+    flex-wrap: wrap;
+  }
 }

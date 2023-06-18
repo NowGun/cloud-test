@@ -1,13 +1,26 @@
 .step-1, .step-2, .step-3 {
   width: 100%;
   overflow: auto;
-  max-height: 50vh;
+  max-height: 60vh;
 
-  & > div {
+  .step-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 50%;
+  }
+
+  @media(max-width: 1200px) {
+
+    .step-container {
+      width: 70%;
+    }
+  }
+
+  @media(max-width: 500px) {
+    .step-container {
+      width: 100%;
+    }
   }
 }
 
@@ -22,4 +35,13 @@
 .navigationButtons {
   display: flex;
   justify-content: space-between;
+}
+
+.step-3 {
+  .step-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
 }
