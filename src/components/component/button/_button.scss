@@ -1,29 +1,99 @@
-
-button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 12px 16px;
-    gap: 8px;
-    background: #5558FA;
-    border-radius: 4px;
-    color: white;
-    border: none;
-}
+@import '../../../_colors.scss';
 
 .btn {
-    &.outlined {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 12px 16px;
-        gap: 8px;
+  border-radius: 4px;
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: background .1s ease-in-out;
 
-        border: 1.5px solid #5558FA;
-        border-radius: 4px;
-        background: transparent;
-        color: #5558fa;
+  line-height: 20px;
+
+  &.btn {
+    &--filled {
+      background: $--accent;
+      color: $--white;
+      border: none;
+
+      &:hover {
+        background: $--accent-hover;
+      }
+
+      &:active {
+        background: $--accent-active;
+      }
+
+      &:disabled {
+        background: $--accent-light;
+        color: $--text-accent__disabled;
+      }
     }
+
+    &--outline {
+      border: 1.5px solid $--accent;
+      background: transparent;
+      color: $--accent;
+
+      &:hover {
+        border: 1.5px solid $--accent-hover;
+        color: $--accent-hover;
+      }
+
+      &:active {
+        border: 1.5px solid $--accent-active;
+        color: $--accent-active;
+      }
+
+      &:disabled {
+        border: 1.5px solid $--accent-light;
+        color: $--accent-light;
+      }
+    }
+
+    &--transparent {
+      border: none;
+      background: transparent;
+      color: $--gray-icon;
+    }
+
+    &--gray {
+      border: none;
+      background: $--disabled;
+      border-radius: 10000px;
+      width: 28px;
+      height: 28px;
+      padding: 5px;
+
+      &:before {
+        color: $--gray-icon;
+      }
+    }
+  }
+}
+
+button[class *= "icon--"] {
+  width: fit-content;
+  padding: 12px;
+
+  &:before {
+    font-size: 18px;
+    transition: color .1s ease-in-out;
+  }
+
+  &:hover {
+    &:before {
+      color: $--accent-hover;
+    }
+  }
+
+  &:active {
+    &:before {
+      color: $--accent-active;
+    }
+  }
+
+  &:disabled {
+    &:before {
+      color: $--accent-light;
+    }
+  }
 }
