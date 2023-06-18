@@ -1,0 +1,61 @@
+@import '../../../colors';
+
+.user {
+  &--info {
+    display: flex;
+    gap: 30px;
+
+    & > div:last-child {
+
+      & > p {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 26px;
+      }
+
+      display: flex;
+      gap: 5px;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+  }
+
+  &--link {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  form {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+}
+
+body {
+  margin: 50px 0;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+
+.error-message {
+  color: $--text-light;
+  font-weight: 400;
+  font-size: 12px;
+}
