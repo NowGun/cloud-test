@@ -99,7 +99,8 @@ const Create = () => {
     const [step, setStep] = useState(1);
     const [visibleModal, setVisibleModal] = useState({visible: false, status: "error"});
 
-    const handleBack = () => {
+    const handleBack = (e) => {
+        e.preventDefault();
         if (step > 1) setStep(step - 1);
     };
 
@@ -115,12 +116,9 @@ const Create = () => {
         let response;
         try {
             response = await axios.post('https://api.sbercloud.ru/content/v1/bootcamp/frontend', values);
-            console.log(response.data);
             console.log(values);
         } catch (error) {
             console.error(error);
-            console.log(values);
-
         } finally {
             if (response)
                 setVisibleModal({visible: true, status: "ok"});
