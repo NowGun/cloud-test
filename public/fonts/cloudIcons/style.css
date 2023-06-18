@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'cloudIcons';
+  src:  url('fonts/cloudIcons.eot?xb9i9h');
+  src:  url('fonts/cloudIcons.eot?xb9i9h#iefix') format('embedded-opentype'),
+    url('fonts/cloudIcons.ttf?xb9i9h') format('truetype'),
+    url('fonts/cloudIcons.woff?xb9i9h') format('woff'),
+    url('fonts/cloudIcons.svg?xb9i9h#cloudIcons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i, button[class *= "icon--"], .select {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'cloudIcons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon--che-down:before {
+  content: "\e900";
+}
+.icon--folder:before {
+  content: "\e901";
+  color: #ccc;
+}
+.icon--close:before {
+  content: "\e902";
+  color: #ccc;
+}
+.icon--plus:before {
+  content: "\e903";
+  color: #5558fa;
+}
+.icon--delete:before {
+  content: "\e904";
+  color: #ccc;
+}
+.icon--success:before {
+  content: "\e905";
+  color: #fff;
+}
+.icon--dot:before {
+  content: "\e906";
+  color: #fff;
+}
