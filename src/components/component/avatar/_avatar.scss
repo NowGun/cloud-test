@@ -1,17 +1,17 @@
+@import '../../../_colors.scss';
+
 .avatar {
-    background: #d5e4f7;
-    padding: 15px;
+    background: $--blue-light;
+    width: 80px;
+    height: 80px;
+    padding: 5px;
     border-radius: 10000px;
-    width: fit-content;
-    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
     & > p {
-        padding: 0;
-        margin: 0;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 40px;
-        line-height: 52px;
-        color: #212830;
+        font-size: 36px;
+        color: $--black;
     }
 }
